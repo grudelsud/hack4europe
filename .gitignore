@@ -4,6 +4,9 @@
 # except for .gitignore
 !.gitignore
 
+# Mac shit
+.DS_STORE
+
 # Ignore Play! working directory #
 db
 eclipse
