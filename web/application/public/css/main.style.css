@@ -1,0 +1,68 @@
+.head-margin {
+	margin-top: 55px;
+}
+.pagination {
+	margin: 0;
+	height: 44px;
+}
+article.feed_item_container {
+	padding: 2px 0;
+	margin-bottom: 15px;
+	border-bottom: 1px solid #ddd;
+}
+	article div.featured {
+		height: 100px;
+	}
+
+#reaction_directory span.label a {
+	color: white;
+}
+
+	#reaction_directory #content_media, #reaction_directory #content_tweets {
+		max-height: 300px;
+		overflow-x: none;
+		overflow-y: scroll;
+	}
+	#reaction_directory .tweet {
+		padding: 3px 3px 8px 0;
+		border-bottom: 1px solid #EEE;
+		position: relative;
+	}
+	#reaction_directory #content_tweets img {
+		position: absolute;
+		top: 24px
+	}
+	#reaction_directory .tweet_content {
+		margin-left: 54px;
+	}
+
+	#reaction_directory .tweet_meta {
+		margin-left: 54px;
+		font-size: 11px;
+		color: #666;
+	}
+
+#tag_directory {
+	padding: 15px 0;
+}
+	#tag_directory ul {
+		list-style-type: none;
+		margin-left: 0;
+	}
+	#tag_directory li {
+		margin-bottom: 3px;
+	}
+	#tag_directory li ul a {
+		display: block;
+		padding: 4px 0 4px 3px;
+		border-bottom: 1px solid #eee;
+	}
+
+#media_directory .thumbnail {
+	height: 170px;
+	overflow: hidden;
+}
+
+#map_container {
+	height: 600px;
+}

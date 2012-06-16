@@ -1,0 +1,12 @@
+@(feedForm: Form[Application.FeedContent])
+
+@import helper._
+
+@main(title = "FeedContent Entity Extractor") {
+
+	@form(action = routes.Application.extractEntities) {
+	@inputText(field = feedForm("content"), args = '_label -> "Content", 'placeholder -> "Insert something here")
+	<input type="submit">
+	}
+
+}

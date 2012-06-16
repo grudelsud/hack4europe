@@ -1,0 +1,203 @@
+.loader {
+	background: url(../img/ajax-loader.gif) no-repeat;
+	float: left;
+	width: 16px;
+	height: 16px;
+	display: none;
+}
+
+.head-margin {
+	margin-top: 75px;
+}
+/* STRUCTURE */
+		#admin #feed_container #feed_controls {
+			/* can be replaced with a .pull-right probably */
+			float: right;
+		}
+			#admin #feed_detail {
+				border: 1px solid lightgrey;
+				padding: 3px;
+				display: none;
+			}
+
+			#feeds label input, #feeds label textarea, #feeds label select {
+				display: inline;
+			}
+			table#feeds_table td {
+				padding: 3px;
+				border: 1px solid lightgrey;
+			}
+			table#feeds_table tr.row_selected td {
+				background: lightyellow;
+			}
+			table#feeds_table .odd {
+				background: #FFF;
+			}
+
+		#admin #feed_pagination a {
+			display: none;
+			padding: 1px;
+			line-height: 24px;
+			margin: 0 2px 0 0;
+			border: 1px solid #333;
+			background: #333;
+			color: #eee;
+			border-radius: 5px;
+			-moz-border-radius: 5px;
+		}
+		#admin #feed_pagination a:hover {
+			background: lightyellow;
+			text-decoration: none;
+			color: #333;
+		}
+		#admin #feed_pagination a.neighbor {
+			display: inline;
+			background: #666;
+		}
+		#admin #feed_pagination a.marker {
+			display: inline;
+		}
+		#admin #feed_pagination a.selected {
+			background: transparent;
+			display: inline;
+			color: #333;
+		}
+		#admin #vocabulary_detail h1 {
+			clear: both;
+		}
+		#admin #vocabulary_detail ul {
+			margin: 6px 0;
+			list-style-type: none;
+		}
+			#admin #feed_content li,
+			#admin #vocabulary_detail li {
+				margin: 3px 0 3px 0;
+				float: left;
+			}
+			#admin #vocabulary_detail li.clear {
+				float: none;
+				clear: both;
+			}
+			#admin #vocabulary_detail li ul {
+				padding: 0 10px;
+			}
+		#admin #feed_content li span,
+		#admin #vocabulary_detail li span {
+			background: #fff;
+			padding: 3px 5px;
+			margin: 0px 3px;
+			border-radius: 5px;
+			-moz-border-radius: 5px;
+			cursor: pointer;
+			background: white;
+		}
+		#admin #feed_content li span:hover,
+		#admin #vocabulary_detail li span:hover {
+			background: lightyellow;
+		}
+			#admin #vocabulary_detail li span.parent_over {
+				background: lightsalmon;
+			}
+			#admin #vocabulary_detail li span.child_over {
+				background: lightskyblue;
+			}
+			#admin #feed_content li span.selected,
+			#admin #vocabulary_detail li span.selected {
+				background: lightgreen;
+			}
+				#admin.topics #vocabulary_detail li.clear {
+					float: left;
+					clear: none;
+				}
+				#admin.topics span.size_1 {
+					font-size: 0.5em;
+				}
+				#admin.topics span.size_2, #admin.topics span.size_3 {
+					font-size: 0.75em;
+				}
+				#admin.topics span.size_4, #admin.topics span.size_5 {
+					font-size: 1em;
+				}
+				#admin.topics span.size_6, #admin.topics span.size_7 {
+					font-size: 1.25em;
+				}
+				#admin.topics span.size_8, #admin.topics span.size_9 {
+					font-size: 1.5em;
+				}
+				#admin.topics span.size_10, #admin.topics span.size_11, #admin.topics span.size_12 {
+					font-size: 2em;
+				}
+				#admin.topics span.size_13, #admin.topics span.size_14, #admin.topics span.size_15 {
+					font-size: 3em;
+				}
+		#admin #tag_controls,
+		#admin #tagged_items {
+			clear: both;
+		}
+		#admin #feed_content .item {
+			padding: 20px;
+			background: white;
+		}
+		#admin #feed_content .item.selected {
+			background: lightgrey;
+		}
+			#admin #feed_content .item img {
+				margin: 0 10px 0 0;
+			}
+		#admin #feed_content .item .item_controls {
+			float: right;
+		}
+		#admin.topics #vocabulary_detail button,
+		#admin #feed_content .item .item_controls button {
+			width: 16px;
+			height: 16px;
+			border: none;
+			margin-left: 2px;
+			vertical-align: top;
+			line-height: 10em;
+			background: transparent url(../img/sprite.png) no-repeat;
+		}
+		#admin.topics #vocabulary_detail button {
+			vertical-align: middle;
+		}
+		#admin #feed_content .item .entities {
+			margin: 15px 0;
+			padding: 10px 0 0 0;
+			line-height: 1.8em;
+			font-size: 0.85em;
+		}
+			#admin #feed_content .item .entities span {
+				margin: 0 5px 0 0;
+				padding: 2px;
+				border-radius: 5px;
+				-moz-border-radius: 5px;
+				background: #eee;
+			}
+		#admin.topics #vocabulary_detail button.slide {
+			background-position: -100px -120px;
+		}
+		#admin.topics #vocabulary_detail button.slide.closed {
+			background-position: 0px -120px;
+		}
+		#admin #feed_content .item .item_controls button.show_content {
+			background-position: -80px -100px;
+		}
+		#admin #feed_content .item .item_controls button.fetch_content {
+			background-position: 0px -100px;
+		}
+		#admin #feed_content .item .item_controls button.fetch_entities {
+			background-position: -120px -40px;
+		}
+		#admin #feed_content .item .item_controls button.check {
+			background-position: -20px 0px;
+		}
+		#admin #feed_content .item .item_controls button.check.selected {
+			background-position: 0px 0px;
+		}
+		#admin #feed_content .item .footer {
+			font-size: 0.85em;
+			padding: 3px;
+			margin: 5px 0;
+			clear: both;
+			border-top: 1px solid lightgrey;
+		}
